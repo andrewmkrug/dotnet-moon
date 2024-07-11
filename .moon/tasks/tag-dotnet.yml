@@ -4,7 +4,7 @@ fileGroups:
   dotnet:
     - 'src/**/*'
     - 'global.json'
-  sources: []
+  sources: ["./"]
   tests:
     - 'tests/**/*'
 
