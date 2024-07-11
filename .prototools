@@ -1,0 +1,6 @@
+dotnet = "6.0.424"
+moon = "1.26.7"
+
+[plugins]
+dotnet = "github://Phault/proto-dotnet-plugin"
+moon = "https://raw.githubusercontent.com/moonrepo/moon/master/proto-plugin.toml"
