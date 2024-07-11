@@ -8,9 +8,9 @@ jobs:
   ci:
     name: 'CI'
     runs-on: 'ubuntu-latest'
-    strategy:
-      matrix:
-        index: [0, 1]
+    # strategy:
+    #   matrix:
+    #     index: [0, 1]
 
     steps:
       - uses: 'actions/checkout@v4'
@@ -26,7 +26,9 @@ jobs:
             .moon/cache/outputs
           key: ${{ runner.os }}
 
-      - run: 'moon ci --job ${{ matrix.index }} --jobTotal 2 --color'
+      # Use this with the stategry above 
+      # - run: 'moon ci --job ${{ matrix.index }} --jobTotal 2 --color'
+      - run: 'moon ci --color'
 
       - uses: appthrust/moon-ci-retrospect@v0
         if: success() || failure()
