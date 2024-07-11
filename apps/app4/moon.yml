@@ -1,0 +1,9 @@
+tags: ['dotnet']
+type: application
+owners:
+  requiredApprovals: 2
+  paths:
+    '/': ['@frontend']
+    'Pages/Shared': ['@design-system']
+    'appsettings.json': ['@frontend-infra']
+    'appsettings.Development.json': ['@frontend-infra']
