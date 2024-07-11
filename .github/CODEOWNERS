@@ -12,3 +12,9 @@
 /apps/sample_webapp_2/appsettings.json @frontend-infra
 /apps/sample_webapp_2/appsettings.Development.json @frontend-infra
 / @frontend
+
+# webapp
+/apps/webapp/Pages/Shared @design-system
+/apps/webapp/appsettings.json @frontend-infra
+/apps/webapp/appsettings.Development.json @frontend-infra
+/ @frontend
