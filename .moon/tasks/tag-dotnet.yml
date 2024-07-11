@@ -12,12 +12,12 @@ fileGroups:
 tasks:
   # Catch-all for any `astro` command
   dotnet:
-    command: '~/.dotnet/dotnet'
+    command: 'proto run dotnet -- '
     local: true
 
   # Build the application
   build:
-    command: '~/.dotnet/dotnet build'
+    command: 'proto run dotnet --  build'
     inputs:
       - '@group(dotnet)'
       - '@group(sources)'
@@ -26,5 +26,5 @@ tasks:
       - 'obj'
     # Run the development server
   dev:
-    command: '~/.dotnet/dotnet run'
+    command: 'proto run dotnet --  run'
     local: true
