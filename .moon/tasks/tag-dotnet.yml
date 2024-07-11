@@ -22,8 +22,8 @@ tasks:
       - '@group(dotnet)'
       - '@group(sources)'
     outputs:
-      - 'dist'
-
+      - 'bin'
+      - 'obj'
     # Run the development server
   dev:
     command: '~/.dotnet/dotnet run'
